@@ -1,0 +1,107 @@
+.navbar {
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.brand-logo {
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 24px;
+    height: 16px;
+    vertical-align: middle;
+    background-image: url('https://th.bing.com/th/id/OIP.qY9KNfNtd0Nbaj_NnrgaUgHaGL?pid=ImgDet&rs=1');
+    background-size: cover;
+}
+
+.navbar-collapse {
+    display: none;
+    flex-grow: 1;
+}
+
+.navbar-collapse.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 10px;
+}
+
+.nav-item a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-item a:hover {
+    color: #f00;
+}
+
+.navbar-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-collapse {
+        display: flex;
+        flex-grow: unset;
+        flex-direction: row;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .nav-item {
+        padding: 0 0.5rem;
+    }
+
+    .navbar-brand {
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,21 @@
+footer {
+    background-color: #6b6b6b;
+    /* Couleur de fond de la barre */
+    padding: 1rem;
+    /* Espace intérieur de la barre */
+    position: sticky;
+    /* Fixe la barre en bas de la page */
+    bottom: 0;
+    /* Positionne la barre en bas de la page */
+    left: 0;
+    /* Positionne la barre à gauche de la page */
+    right: 0;
+    /* Positionne la barre à droite de la page */
+}
+
+footer p {
+    color: #D3D3D3;
+    /* Couleur du texte */
+    text-align: center;
+    /* Centre le texte */
+}
