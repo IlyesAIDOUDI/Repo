@@ -7,15 +7,27 @@ import Piece from "./Piece";
 import Acces from "./Acces";
 import Navbar from "./Navbar";
 import Contact from "./Contact";
+import Panier from "./panier";
+import { initializeApp } from "firebase/app";
 
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 
+const firebaseConfig = {
+  apiKey: "AIzaSyDsjTMp89ItPssmTUfgqNcH6Q_62firMBU",
+  authDomain: "paulilyes-55a3e.firebaseapp.com",
+  projectId: "paulilyes-55a3e",
+  storageBucket: "paulilyes-55a3e.appspot.com",
+  messagingSenderId: "628015710639",
+  appId: "1:628015710639:web:e10db970f0f3eea7846f5a"
+};
+
+const app = initializeApp(firebaseConfig);
+
 const router = createBrowserRouter([
   {
-    element: <App></App>,
     path: "/",
     element: <App></App>,
   }, {
@@ -31,12 +43,17 @@ const router = createBrowserRouter([
   },
   {
     path: "/acces",
-    element: <Navbar />,
     element: <Acces />,
 
   }, {
     path: "/contact",
     element: <Contact />,
+
+  },
+  {
+    path: "/panier",
+    element: <Panier />,
+
 
   },
 ]);
