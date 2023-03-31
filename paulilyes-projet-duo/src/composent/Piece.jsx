@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './App.css'
 import Produit from "./Produit";
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { Itemboutique } from "./itemboutique";
@@ -8,10 +7,8 @@ function Piece() {
     const [count, setCount] = useState(0)
 
     return (
-        <div className="App">
-
-
-            <div className="image">
+        <div className="flex flex-col items-center justify-center">
+            <div className="flex gap-4 flex-wrap justify-center image">
                 <Produit
                     name="Pièce 1"
                     prix={9.99}
